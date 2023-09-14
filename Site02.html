@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas</title>
+    <link rel="stylesheet" href="Site01.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+    <div id="caixa_pesquisar" class="caixa azul">
+        <button onclick="openmodal()" id="new">+<i></i></button>
+        <input type="text" id="barrapesquisar" placeholder="Pesquisar..."/>    
+    </div>
+    </div>
+
+    <div class="divtable">
+       <table class="list" id="employeeList">
+        <thead>
+        <tr>
+            <th>Nome e Versão</th>
+            <th>Finalidade</th>
+            <th>Informações Armazenadas</th>
+            <th>Responsavel</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+       </table> 
+       <div class="pagination">
+        <button id="previousPage">Anterior</button>
+        <span id="currentPage">Página 1 de 1</span>
+        <button id="nextPage">Próximo</button>
+    </div>
+    </div>
+</div>
+
+<div class="modal-container">
+<div class="modal">
+    <form>
+        <div> 
+         <input type="text" name="nome" id="nome" placeholder="Nome e Versão" required>
+         <input type="text" name="funçao" id="funçao" placeholder="Finalidade" required>
+         <input type="text" name="info" id="info" placeholder="Informações Armazenadas" required>
+         <input type="text" name="responsavel" id="responsavel" placeholder="Responsavel" required>
+        </div>
+        <button id="btnsalvar">Salvar</button>
+    </form>
+</div>
+</div>
+<script src="Site01.js"></script>
+</body>
+</html>
